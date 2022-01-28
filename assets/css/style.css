@@ -1,5 +1,5 @@
 /* === Fonts === */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Nunito&display=swap");
 
 /* === Variables === */
 :root {
@@ -14,17 +14,17 @@
   --body-color: hsl(var(--hue-color), 24%, 94%);
 
   /* === Fonts and Typography === */
-  --body-font: 'Inconsolata', monospace;
+  --body-font: "Inconsolata", monospace;
   --biggest-font-size: 3rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-  --tiny-font-size: .625rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
 
   /* Font weights */
   --font-medium: 500;
 
   /* Margins */
-  --mb-0-25: .25rem;
+  --mb-0-25: 0.25rem;
   --mb-1: 1rem;
   --mb-1-5: 1.5rem;
   --mb-2-5: 2.5rem;
@@ -34,12 +34,12 @@
   --z-tooltip: 10;
 }
 @media screen and (min-width: 968px) {
-:root {
-  --biggest-font-size: 3.5rem;
-  --small-font-size: .875rem;
-  --smaller-font-size: .813rem;
-  --tiny-font-size: .75rem;
-    }
+  :root {
+    --biggest-font-size: 3.5rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+    --tiny-font-size: 0.75rem;
+  }
 }
 
 /* Variables Dark theme */
@@ -57,17 +57,17 @@ body.dark-theme {
   top: -1rem;
   right: -1rem;
   display: flex;
-  padding: .25rem;
+  padding: 0.25rem;
   border-radius: 50%;
   box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
-  inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+    inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
   color: var(--first-color);
   cursor: pointer;
 }
 
 /* box shadow dark theme */
-.dark-theme .clock__circle{
-   box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
+.dark-theme .clock__circle {
+  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
     -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
     inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
     inset 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1);
@@ -75,9 +75,8 @@ body.dark-theme {
 
 .dark-theme .clock__theme {
   box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
-  inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+    inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
 }
-
 
 /*BASE*/
 * {
@@ -108,7 +107,6 @@ a {
   display: grid;
 }
 
-
 /*Clock*/
 .clock__container {
   height: 100vh;
@@ -120,9 +118,9 @@ a {
   width: 200px;
   height: 200px;
   box-shadow: -6px -6px 16px var(--white-color),
-              6px 6px 16px hsla(var(--hue-color),30%, 86%, 1),
-              inset 6px 6px 16px hsla(var(--hue-color),30%, 86%, 1),
-              inset -6px -6px 16px var(--white-color);
+    6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+    inset 6px 6px 16px hsla(var(--hue-color), 30%, 86%, 1),
+    inset -6px -6px 16px var(--white-color);
   border-radius: 50%;
   justify-self: center;
   display: flex;
@@ -157,7 +155,7 @@ a {
 
 .clock__three {
   top: 50%;
-  right: .75rem;
+  right: 0.75rem;
 }
 
 .clock__six {
@@ -166,20 +164,22 @@ a {
 }
 
 .clock__nine {
-  left: .75rem;
+  left: 0.75rem;
   top: 50%;
 }
 
 .clock__rounder {
-  width: .75rem;
-  height: .75rem;
+  width: 0.75rem;
+  height: 0.75rem;
   background-color: var(--first-color);
   border-radius: 50%;
   border: 2px solid var(--body-color);
   z-index: var(--z-tooltip);
 }
 
-.clock__hour, .clock__minutes, .clock__seconds {
+.clock__hour,
+.clock__minutes,
+.clock__seconds {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -189,10 +189,10 @@ a {
   height: 105px;
 }
 .clock__hour::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--text-color);
-  width: .25rem;
+  width: 0.25rem;
   height: 3rem;
   z-index: var(--z-normal);
 }
@@ -202,12 +202,12 @@ a {
   height: 136px;
 }
 .clock__minutes::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--text-color);
-  width: .25rem;
+  width: 0.25rem;
   height: 4rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   z-index: var(--z-normal);
 }
 
@@ -216,12 +216,12 @@ a {
   height: 130px;
 }
 .clock__seconds::before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: var(--first-color);
-  width: .125rem;
+  width: 0.125rem;
   height: 5rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   z-index: var(--z-normal);
 }
 
@@ -232,7 +232,7 @@ a {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   color: var(--text-color-light);
-  transition: .3s;
+  transition: 0.3s;
 }
 .clock__logo:hover {
   color: var(--first-color);
@@ -242,9 +242,9 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: var(--mb-0-25);
-
 }
-.clock__text-hour, .clock__text-minutes {
+.clock__text-hour,
+.clock__text-minutes {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   color: var(--title-color);
@@ -266,7 +266,7 @@ a {
 
 /* for larger devices */
 
-@media screen and (min-width: 968px){
+@media screen and (min-width: 968px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -275,4 +275,3 @@ a {
     margin-bottom: 3rem;
   }
 }
-
